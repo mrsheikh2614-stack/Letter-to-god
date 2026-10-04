@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter to God — 20 Important MCQs | Class 10</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f4f7fb;color:#172033}
+.hero{background:linear-gradient(135deg,#102a43,#1d4ed8);color:#fff;padding:34px 18px 28px;text-align:center}
+.hero h1{margin:0 0 8px;font-size:clamp(25px,5vw,42px)} .hero p{margin:6px auto;max-width:760px;opacity:.92}
+.wrap{max-width:900px;margin:22px auto;padding:0 14px}
+.info{background:#fff;border-radius:16px;padding:18px;box-shadow:0 5px 20px #17203312;margin-bottom:18px}
+.badges{display:flex;gap:8px;flex-wrap:wrap}.badge{padding:7px 10px;border-radius:999px;background:#e8f0ff;color:#174ea6;font-size:13px;font-weight:700}
+.card{background:#fff;border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 4px 18px #17203310;border:1px solid #e8edf5}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.num{font-weight:800;color:#1d4ed8}.tag{font-size:11px;background:#eef2ff;color:#4338ca;padding:5px 8px;border-radius:999px;white-space:nowrap}
+.q{font-size:18px;font-weight:750;margin:8px 0 15px}
+label{display:block;padding:12px 13px;margin:8px 0;border:1px solid #dce3ed;border-radius:10px;cursor:pointer;transition:.15s}
+label:hover{background:#f7faff;border-color:#93b4ff} input{margin-right:9px}
+.correct{border-color:#16a34a!important;background:#ecfdf3!important}.wrong{border-color:#dc2626!important;background:#fef2f2!important}
+.feedback{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#f7f8fa;font-size:14px}.show{display:block}
+.actions{position:sticky;bottom:12px;background:#ffffffeb;backdrop-filter:blur(10px);padding:12px;border-radius:14px;box-shadow:0 5px 25px #17203322;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0}
+button{border:0;border-radius:10px;padding:12px 18px;font-weight:800;cursor:pointer;font-size:15px}.primary{background:#1d4ed8;color:#fff}.secondary{background:#e8edf5;color:#172033}
+#result{display:none;text-align:center}.score{font-size:44px;font-weight:900;color:#1d4ed8}.muted{color:#607089;font-size:13px}
+.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0;text-align:center}
+.result-grid>div{background:#f5f7fb;border-radius:12px;padding:14px}
+.result-grid b{display:block;font-size:25px;color:#1d4ed8}
+.result-grid span{display:block;font-size:12px;color:#607089;margin-top:4px}
+#answerReview{text-align:left;margin-top:22px}
+#answerReview h3{text-align:center;margin-bottom:14px}
+.review{padding:14px;border-radius:12px;margin:10px 0;border:1px solid #dce3ed}
+.review-correct{background:#ecfdf3;border-color:#86efac}
+.review-wrong{background:#fef2f2;border-color:#fecaca}
+.review-title{display:flex;justify-content:space-between;gap:10px}
+.review-correct .review-title span{color:#15803d;font-weight:800}
+.review-wrong .review-title span{color:#b91c1c;font-weight:800}
+.review p{margin:7px 0;font-size:14px}
+@media(max-width:650px){.result-grid{grid-template-columns:repeat(2,1fr)}.review-title{display:block}.review-title span{display:block;margin-top:5px}}
+footer{text-align:center;padding:30px 15px;color:#68768a;font-size:13px}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>A Letter to God — 20 Important MCQs</h1>
+<p>Class 10 English • First Flight • Board-focused practice quiz</p>
+</header>
+<main class="wrap">
+<section class="info">
+<div class="badges"><span class="badge">20 Questions</span><span class="badge">1 Mark Each</span><span class="badge">Instant Score</span><span class="badge">Mobile Friendly</span></div>
+<p><b>How to use:</b> Select one answer for every question and tap <b>Submit Test</b>. Your score and explanations will appear immediately.</p>
+<p class="muted">Note: The set combines questions drawn from documented CBSE MCQ material and recurring previous-year/board-exam topics. It is a practice set, not a claim that every question below appeared verbatim in a CBSE board paper.</p>
+</section>
+<div id="quiz"></div>
+<div class="actions">
+<button class="primary" onclick="submitQuiz()">Submit Test</button>
+<button class="secondary" onclick="resetQuiz()">Reset</button>
+</div>
+<section id="result" class="info">
+  <div class="score" id="score"></div>
+  <h2 id="resultTitle">Test Result</h2>
+  <p id="message"></p>
+  <div id="summary"></div>
+  <div id="answerReview"></div>
+</section>
+</main>
+<footer>Class 10 English • Chapter 1: A Letter to God • Practice Website</footer>
+<script>
+const questions = [{"id": 1, "q": "Where was Lencho’s house situated?", "options": ["At the bottom of a hill", "On the crest of a low hill", "In a city", "Beside a forest"], "answer": 1, "explanation": "The story says Lencho’s house was the only one in the valley and stood on the crest of a low hill.", "tag": "CBSE pattern"}, {"id": 2, "q": "What crop was growing in Lencho’s field?", "options": ["Rice", "Wheat", "Corn", "Barley"], "answer": 2, "explanation": "Lencho had a field of ripe corn.", "tag": "CBSE pattern"}, {"id": 3, "q": "What was the only thing the earth needed, according to Lencho?", "options": ["A strong wind", "A shower", "Snowfall", "Sunlight"], "answer": 1, "explanation": "Lencho hoped for a good shower of rain.", "tag": "CBSE 2021 source set"}, {"id": 4, "q": "From which direction did Lencho expect the downpour to come?", "options": ["North", "North-east", "South-west", "South-east"], "answer": 1, "explanation": "He watched the sky towards the north-east.", "tag": "CBSE 2021 source set"}, {"id": 5, "q": "What did Lencho compare the large raindrops with?", "options": ["Pearls", "Diamonds", "New coins", "Silver plates"], "answer": 2, "explanation": "The raindrops were compared to new coins.", "tag": "CBSE 2021 source set"}, {"id": 6, "q": "What natural disaster destroyed Lencho’s crop?", "options": ["Flood", "Drought", "Hailstorm", "Earthquake"], "answer": 2, "explanation": "A severe hailstorm destroyed the entire crop.", "tag": "CBSE 2021 source set"}, {"id": 7, "q": "How long did the hailstorm continue?", "options": ["Half an hour", "An hour", "Two hours", "All night"], "answer": 1, "explanation": "The hailstorm lasted for an hour.", "tag": "Board pattern"}, {"id": 8, "q": "What did the field look like after the hailstorm?", "options": ["Covered with flowers", "Covered with salt", "Covered with mud", "Covered with water"], "answer": 1, "explanation": "The field looked as if it were covered with salt.", "tag": "Board pattern"}, {"id": 9, "q": "What was Lencho’s only hope after the crop was destroyed?", "options": ["His neighbours", "The government", "Help from God", "The postmaster"], "answer": 2, "explanation": "Lencho had complete faith that God would help him.", "tag": "Recurring board topic"}, {"id": 10, "q": "How much money did Lencho ask God for?", "options": ["50 pesos", "70 pesos", "100 pesos", "120 pesos"], "answer": 2, "explanation": "Lencho asked God for one hundred pesos.", "tag": "Recurring board topic"}, {"id": 11, "q": "Why did Lencho write a letter to God?", "options": ["To thank God for the rain", "To ask for money to sow his field again and survive", "To complain about his neighbours", "To ask for a new house"], "answer": 1, "explanation": "He needed money after the hailstorm destroyed his crop.", "tag": "Recurring board topic"}, {"id": 12, "q": "Who read Lencho’s letter at the post office?", "options": ["The postman only", "The postmaster", "Lencho’s son", "A farmer"], "answer": 1, "explanation": "The postmaster read the letter and was deeply moved by Lencho’s faith.", "tag": "CBSE 2021 source set"}, {"id": 13, "q": "What did the postmaster do after reading Lencho’s letter?", "options": ["He ignored it", "He laughed at Lencho", "He decided to answer the letter and collect money", "He sent it back"], "answer": 2, "explanation": "He wanted to preserve Lencho’s faith in God.", "tag": "CBSE 2021 source set"}, {"id": 14, "q": "How much money could the postmaster and his employees collect for Lencho?", "options": ["100 pesos", "80 pesos", "70 pesos", "50 pesos"], "answer": 2, "explanation": "They managed to collect only seventy pesos.", "tag": "Recurring board topic"}, {"id": 15, "q": "How did Lencho react when he received the money?", "options": ["He was angry", "He was surprised that God had helped him", "He returned it", "He thanked the postmaster"], "answer": 1, "explanation": "Lencho had complete faith that the money had come from God.", "tag": "Recurring board topic"}, {"id": 16, "q": "What did Lencho call the post-office employees in his second letter?", "options": ["Kind people", "A bunch of crooks", "Good friends", "Honest men"], "answer": 1, "explanation": "Ironically, he believed the employees had stolen the remaining thirty pesos.", "tag": "Recurring board topic"}, {"id": 17, "q": "What is the central theme of ‘A Letter to God’?", "options": ["Adventure", "Faith and irony", "Jealousy", "War"], "answer": 1, "explanation": "The story highlights Lencho’s unwavering faith and the irony of his misunderstanding.", "tag": "Board theme"}, {"id": 18, "q": "What does the word ‘amiable’ mean in the description of the postmaster?", "options": ["Angry", "Friendly", "Proud", "Cruel"], "answer": 1, "explanation": "Amiable means friendly and pleasant.", "tag": "Board vocabulary"}, {"id": 19, "q": "Who is the author of ‘A Letter to God’?", "options": ["G. L. Fuentes", "R. K. Narayan", "Ruskin Bond", "William Wordsworth"], "answer": 0, "explanation": "The story was written by Mexican writer Gregorio López y Fuentes.", "tag": "CBSE pattern"}, {"id": 20, "q": "What is the biggest irony in the story?", "options": ["Lencho disliked rain", "The people who helped Lencho were called crooks by him", "The postmaster never read the letter", "God sent no rain"], "answer": 1, "explanation": "The post-office employees helped Lencho, yet Lencho suspected them of stealing his money.", "tag": "Board theme"}];
+const quiz = document.getElementById('quiz');
+
+function render(){
+  quiz.innerHTML = questions.map(item => `
+    <section class="card" id="card-${item.id}">
+      <div class="qhead"><div class="num">Q${item.id}</div><span class="tag">${item.tag}</span></div>
+      <div class="q">${item.q}</div>
+      <div>
+        ${item.options.map((opt,j)=>`
+          <label id="opt-${item.id}-${j}">
+            <input type="radio" name="q${item.id}" value="${j}">
+            <span>${String.fromCharCode(65+j)}. ${opt}</span>
+          </label>`).join('')}
+      </div>
+      <div class="feedback" id="feedback-${item.id}"></div>
+    </section>`).join('');
+}
+function submitQuiz(){
+  let score=0, attempted=0;
+  const review=[];
+
+  questions.forEach(item=>{
+    const selected=document.querySelector(`input[name="q${item.id}"]:checked`);
+    const fb=document.getElementById(`feedback-${item.id}`);
+
+    item.options.forEach((_,j)=>{
+      document.getElementById(`opt-${item.id}-${j}`).classList.remove('correct','wrong');
+    });
+
+    let userAnswer = null;
+    let isCorrect = false;
+
+    if(selected){
+      attempted++;
+      const val=Number(selected.value);
+      userAnswer = item.options[val];
+
+      if(val===item.answer){
+        score++;
+        isCorrect=true;
+        document.getElementById(`opt-${item.id}-${val}`).classList.add('correct');
+      } else {
+        document.getElementById(`opt-${item.id}-${val}`).classList.add('wrong');
+        document.getElementById(`opt-${item.id}-${item.answer}`).classList.add('correct');
+      }
+
+      fb.innerHTML = `<b>${isCorrect?'Correct!':'Incorrect.'}</b><br>
+        <b>Correct answer:</b> ${String.fromCharCode(65+item.answer)}. ${item.options[item.answer]}<br>
+        ${item.explanation}`;
+    } else {
+      document.getElementById(`opt-${item.id}-${item.answer}`).classList.add('correct');
+      fb.innerHTML = `<b>Not attempted.</b><br>
+        <b>Correct answer:</b> ${String.fromCharCode(65+item.answer)}. ${item.options[item.answer]}<br>
+        ${item.explanation}`;
+    }
+
+    fb.classList.add('show');
+
+    review.push({
+      id:item.id,
+      question:item.q,
+      userAnswer:userAnswer,
+      correctAnswer:item.options[item.answer],
+      isCorrect:isCorrect,
+      attempted:!!selected
+    });
+  });
+
+  const result=document.getElementById('result');
+  const percentage=Math.round((score/questions.length)*100);
+
+  result.style.display='block';
+  document.getElementById('score').textContent=`${score} / ${questions.length}`;
+  document.getElementById('resultTitle').textContent =
+    percentage===100 ? '🎉 All Answers Correct!' : '📊 Final Result';
+
+  document.getElementById('message').textContent =
+    percentage===100
+      ? 'Excellent! You answered all 20 questions correctly.'
+      : `You got ${score} correct, ${questions.length-score} incorrect/not correct, and attempted ${attempted} of ${questions.length}.`;
+
+  document.getElementById('summary').innerHTML = `
+    <div class="result-grid">
+      <div><b>${score}</b><span>Correct</span></div>
+      <div><b>${questions.length-score}</b><span>Incorrect / Not Correct</span></div>
+      <div><b>${questions.length-attempted}</b><span>Not Attempted</span></div>
+      <div><b>${percentage}%</b><span>Score</span></div>
+    </div>`;
+
+  document.getElementById('answerReview').innerHTML = `
+    <h3>Answer-by-Answer Review</h3>
+    ${review.map(r=>`
+      <div class="review ${r.isCorrect?'review-correct':'review-wrong'}">
+        <div class="review-title">
+          <b>Q${r.id}. ${r.question}</b>
+          <span>${r.isCorrect?'✓ Correct':'✗ Wrong'}</span>
+        </div>
+        <p><b>Your answer:</b> ${r.userAnswer ?? 'Not attempted'}</p>
+        <p><b>Correct answer:</b> ${r.correctAnswer}</p>
+      </div>`).join('')}`;
+
+  result.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function resetQuiz(){
+  render();
+  document.getElementById('result').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+render();
+</script>
+</body>
+</html>
